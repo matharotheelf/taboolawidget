@@ -1,5 +1,6 @@
 class Article {
-  constructor(title){
+  constructor(title, thumbnail){
     this.title = title
+    this.thumbnail = thumbnail
   }
 }
