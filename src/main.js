@@ -14,5 +14,6 @@ request.onload = function () {
   frame.insertAdjacentHTML('beforeend', string);
   firstTitle.innerText = articleList.list[0].title
   firstBranding.innerText = articleList.list[0].brand
+  firstLink.href = articleList.list[0].link
 }
 request.send();
