@@ -4,11 +4,15 @@ request.open('GET', "https://api.taboola.com/1.2/json/apitestaccount/recommendat
 request.onload = function () {
   var result = JSON.parse(this.response);
   lst = result.list
-  for (var i = 0; i < lst.length; i++) {
-    var article = new Article(lst[i].name, lst[i].thumbnail[0].url, lst[i].name, lst[i].url, lst[i].branding)
+  lst.forEach(function(entry){
+    var article = new Article(entry.name, entry.thumbnail[0].url, entry.url, entry.branding)
     articleList.addArticle(article)
-  }
+  })
+
+  var frame = document.getElementById('firstFrame')
+  var string = `<img src="` + articleList.list[0].thumbnail + `">`
+  frame.insertAdjacentHTML('beforeend', string);
+  firstTitle.innerText = articleList.list[0].title
+  firstBranding.innerText = articleList.list[0].brand
 }
 request.send();
-
-console.log(articleList.list)
