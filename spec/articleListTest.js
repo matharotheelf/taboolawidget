@@ -5,7 +5,7 @@ describe('ArticleList', function(){
   beforeEach(function() {
     articleList = new ArticleList()
   });
-
+  
   it("starts empty of articles", function() {
     expect(articleList.list).toEqual([])
   });
