@@ -6,7 +6,7 @@
     border-radius:5px;
 }
 
-.title{
+.title, .widgettitle{
   color: black;
   font-family: Verdana;
   font-weight: bold;
