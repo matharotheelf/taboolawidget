@@ -28,6 +28,13 @@ request.onload = function () {
   frame.insertAdjacentHTML('beforeend', string);
   thirdTitle.innerText = articleList.list[2].title
   thirdBranding.innerText = articleList.list[2].brand
-  thirdLink.href = articleList.list[1].link
+  thirdLink.href = articleList.list[2].link
+
+  frame = document.getElementById('fourthFrame')
+  string = `<img src="` + articleList.list[3].thumbnail + `">`
+  frame.insertAdjacentHTML('beforeend', string);
+  fourthTitle.innerText = articleList.list[3].title
+  fourthBranding.innerText = articleList.list[3].brand
+  fourthLink.href = articleList.list[3].link
 }
 request.send();
