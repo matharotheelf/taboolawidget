@@ -1,0 +1,12 @@
+.article{
+    background-color: coral;
+    width: 30%;
+    float:left;
+    margin:10px;
+    border-radius:5px;
+}
+
+.image{
+  max-width:100%;
+  height:auto;
+}

@@ -10,9 +10,8 @@ request.onload = function () {
   })
 
   for (var i = 0; i < 6; i++) {
-    var frame = document.getElementsByClassName('frame')[i]
-    var string = `<img src="` + articleList.list[i].thumbnail + `">`
-    frame.insertAdjacentHTML('beforeend', string);
+    var image = document.getElementsByClassName('image')[i]
+    image.src = articleList.list[i].thumbnail
     var title = document.getElementsByClassName('title')[i]
     title.innerText = articleList.list[i].title
     var branding = document.getElementsByClassName('branding')[i]
