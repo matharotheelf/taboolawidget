@@ -17,13 +17,26 @@
   }
 }
 
-.title, .widgettitle{
+.widgettitle{
   color: black;
   font-family: Verdana;
   font-weight: bold;
   font-size: 0.9em
 }
 
+.title {
+  color: black;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; 
+  line-height: 1em;
+  max-height: 3em;
+}
 .branding{
   color: darkgrey;
   font-family: Verdana;
