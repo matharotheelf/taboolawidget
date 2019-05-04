@@ -9,46 +9,16 @@ request.onload = function () {
     articleList.addArticle(article)
   })
 
-  var frame = document.getElementById('firstFrame')
-  var string = `<img src="` + articleList.list[0].thumbnail + `">`
-  frame.insertAdjacentHTML('beforeend', string);
-  firstTitle.innerText = articleList.list[0].title
-  firstBranding.innerText = articleList.list[0].brand
-  firstLink.href = articleList.list[0].link
-
-  frame = document.getElementById('secondFrame')
-  string = `<img src="` + articleList.list[1].thumbnail + `">`
-  frame.insertAdjacentHTML('beforeend', string);
-  secondTitle.innerText = articleList.list[1].title
-  secondBranding.innerText = articleList.list[1].brand
-  secondLink.href = articleList.list[1].link
-
-  frame = document.getElementById('thirdFrame')
-  string = `<img src="` + articleList.list[2].thumbnail + `">`
-  frame.insertAdjacentHTML('beforeend', string);
-  thirdTitle.innerText = articleList.list[2].title
-  thirdBranding.innerText = articleList.list[2].brand
-  thirdLink.href = articleList.list[2].link
-
-  frame = document.getElementById('fourthFrame')
-  string = `<img src="` + articleList.list[3].thumbnail + `">`
-  frame.insertAdjacentHTML('beforeend', string);
-  fourthTitle.innerText = articleList.list[3].title
-  fourthBranding.innerText = articleList.list[3].brand
-  fourthLink.href = articleList.list[3].link
-
-  frame = document.getElementById('fifthFrame')
-  string = `<img src="` + articleList.list[4].thumbnail + `">`
-  frame.insertAdjacentHTML('beforeend', string);
-  fifthTitle.innerText = articleList.list[4].title
-  fifthBranding.innerText = articleList.list[4].brand
-  fifthLink.href = articleList.list[4].link
-
-  frame = document.getElementById('sixthFrame')
-  string = `<img src="` + articleList.list[5].thumbnail + `">`
-  frame.insertAdjacentHTML('beforeend', string);
-  sixthTitle.innerText = articleList.list[5].title
-  sixthBranding.innerText = articleList.list[5].brand
-  sixthLink.href = articleList.list[5].link
+  for (var i = 0; i < 6; i++) {
+    var frame = document.getElementsByClassName('frame')[i]
+    var string = `<img src="` + articleList.list[i].thumbnail + `">`
+    frame.insertAdjacentHTML('beforeend', string);
+    var title = document.getElementsByClassName('title')[i]
+    title.innerText = articleList.list[i].title
+    var branding = document.getElementsByClassName('branding')[i]
+    branding.innerText = articleList.list[i].brand
+    var link = document.getElementsByClassName('link')[i]
+    link.href = articleList.list[i].link
+  }
 }
 request.send();
