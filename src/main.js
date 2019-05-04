@@ -43,5 +43,12 @@ request.onload = function () {
   fifthTitle.innerText = articleList.list[4].title
   fifthBranding.innerText = articleList.list[4].brand
   fifthLink.href = articleList.list[4].link
+
+  frame = document.getElementById('sixthFrame')
+  string = `<img src="` + articleList.list[5].thumbnail + `">`
+  frame.insertAdjacentHTML('beforeend', string);
+  sixthTitle.innerText = articleList.list[5].title
+  sixthBranding.innerText = articleList.list[5].brand
+  sixthLink.href = articleList.list[5].link
 }
 request.send();
