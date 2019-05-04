@@ -5,7 +5,7 @@ request.onload = function () {
   var result = JSON.parse(this.response);
   lst = result.list
   lst.forEach(function(entry){
-    var article = new Article(entry.name, entry.thumbnail[0].url, entry.url, entry.branding)
+    var article = new Article(entry.name, entry.thumbnail[0].url, entry.url, entry.branding, entry.categories[0])
     articleList.addArticle(article)
   })
 
@@ -16,6 +16,8 @@ request.onload = function () {
     title.innerText = articleList.list[i].title
     var branding = document.getElementsByClassName('branding')[i]
     branding.innerText = articleList.list[i].brand
+    var category = document.getElementsByClassName('category')[i]
+    category.innerText = articleList.list[i].category
     var link = document.getElementsByClassName('link')[i]
     link.href = articleList.list[i].link
   }

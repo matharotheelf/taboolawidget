@@ -1,6 +1,6 @@
 .article{
     width: 90%;
-    height: 50%;
+    height: 55%;
     float:left;
     margin:10px;
     border-radius:5px;
@@ -38,6 +38,14 @@
   max-height: 3.6em;
 }
 .branding{
+  color: darkgrey;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 0.7em
+}
+
+.category{
+  text-transform: uppercase;
   color: darkgrey;
   font-family: Verdana;
   font-weight: bold;
