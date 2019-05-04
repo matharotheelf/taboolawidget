@@ -2,7 +2,7 @@ describe('Article', function(){
   var article;
 
   beforeEach(function() {
-    article = new Article('This Article', 'Thumbnail Address', 'Link Address', 'Brand')
+    article = new Article('This Article', 'Thumbnail Address', 'Link Address', 'Brand', 'Category')
   });
 
   it('Article stores a title', function() {
@@ -19,5 +19,9 @@ describe('Article', function(){
 
   it('Article stores branding', function() {
     expect(article.brand).toBe('Brand');
+  });
+
+  it('Article stores category', function() {
+    expect(article.category).toBe('Category');
   });
 })
