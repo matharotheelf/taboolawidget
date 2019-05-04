@@ -15,5 +15,12 @@ request.onload = function () {
   firstTitle.innerText = articleList.list[0].title
   firstBranding.innerText = articleList.list[0].brand
   firstLink.href = articleList.list[0].link
+
+  frame = document.getElementById('secondFrame')
+  string = `<img src="` + articleList.list[1].thumbnail + `">`
+  frame.insertAdjacentHTML('beforeend', string);
+  secondTitle.innerText = articleList.list[1].title
+  secondBranding.innerText = articleList.list[1].brand
+  secondLink.href = articleList.list[1].link
 }
 request.send();
