@@ -1,5 +1,4 @@
 .article{
-    background-color: coral;
     width: 30%;
     float:left;
     margin:10px;
@@ -9,4 +8,8 @@
 .image{
   max-width:100%;
   height:auto;
+}
+
+body {
+  background-color: lightgrey;
 }
