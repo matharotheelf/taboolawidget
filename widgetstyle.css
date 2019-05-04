@@ -6,6 +6,24 @@
     border-radius:5px;
 }
 
+.title{
+  color: black;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 0.9em
+}
+
+.branding{
+  color: darkgrey;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 0.7em
+}
+
+.link{
+  text-decoration: none;
+}
+
 .image{
   max-width:100%;
   height:auto;
