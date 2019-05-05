@@ -1,16 +1,15 @@
 .article{
     width: 90%;
-    height: 55%;
+    height: 460px;
     float:left;
     margin:10px;
-    border-radius:5px;
 }
 
 @media only screen and (min-width: 600px) {
 
   .article{
       width: 30%;
-      height: 48%;
+      height: 400px;
       float:left;
       margin:10px;
       border-radius:5px;
@@ -18,6 +17,7 @@
 }
 
 .widgettitle{
+  padding-left:10px;
   color: black;
   font-family: Verdana;
   font-weight: bold;
