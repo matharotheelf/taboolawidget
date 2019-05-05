@@ -4,7 +4,7 @@ Creating a widget.
 ## Description
 
 This is widget is based on Taboola's advertising widget. It has the following features:
-* Users can see a list of advertisement's pictures, titles, categories and branding.
+* Users can see a list of advertisements' pictures, titles, categories and branding.
 * Users can click on any part of the advertisement to be sent to the corrresponding article.
 * Users see the advertisements from Taboola's API.
 * Users see a display which is responsive to the device they are viewing on.
