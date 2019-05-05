@@ -36,7 +36,8 @@ I can click on any part of the advertisement to be sent to the corrresponding ar
 I can see the advertisements from Taboola's API.
 I can see a display which is responsive to the device they are viewing on.
 
-## Contributors  
+## Contributors 
+
 [Tom Lawrence](https://github.com/matharotheelf)  
 
 ## How to Contribute
